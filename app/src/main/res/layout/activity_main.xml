@@ -1,18 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
+    <!-- Barra de búsqueda de lugar en la parte superior -->
+    <EditText
+        android:id="@+id/edittext_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/buscar_lugar"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_food"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="" />
+
+    <!-- Botón con icono de comida -->
+    <ImageButton
+        android:id="@+id/button_food"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_food"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_clothing"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Botón de comida" />
+
+    <!-- Botón con icono de ropa -->
+    <ImageButton
+        android:id="@+id/button_clothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clothing"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_cart"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Botón de ropa" />
+
+    <!-- Botón con icono de carrito -->
+    <ImageButton
+        android:id="@+id/button_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cart"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Botón de carrito" />
+
+    <!-- Mapa -->
+    <!-- Aquí iría tu vista de mapa, asegúrate de definirla correctamente en tu código -->
+
+    <!-- Botón "Iniciar Sesión" en la parte inferior -->
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iniciar_sesi_n"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:onClick="onLoginButtonClick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

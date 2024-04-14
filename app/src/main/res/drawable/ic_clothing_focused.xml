@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+
+    <!-- Definición del dibujo del icono de ropa cuando el botón está enfocado -->
+    <path
+        android:fillColor="#FF0000"
+    android:pathData="M12,3l-9,9l1.41,1.41l7.59,-7.59v14h2v-14l7.59,7.59l1.41,-1.41z"/>
+</vector>

@@ -21,6 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DialogRegisterActivity">
+            <!-- Aquí puedes agregar otras configuraciones de la actividad si es necesario -->
+        </activity>
+        <activity android:name=".DialogResetPasswordEmail"></activity>
+
+        <activity android:name=".DialogResetPassword"></activity>
+
+        <activity android:name=".DialogResetPasswordCode"></activity>
+
     </application>
 
 </manifest>

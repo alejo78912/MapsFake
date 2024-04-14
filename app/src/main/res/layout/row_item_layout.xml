@@ -1,0 +1,39 @@
+<!-- row_item_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Nombre" />
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado" />
+
+    <TextView
+        android:id="@+id/text_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin" />
+
+    <Button
+        android:id="@+id/button_authorize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autorizar" />
+
+    <Button
+        android:id="@+id/button_denegate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Denegar" />
+
+</LinearLayout>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MapsFake</string>
+    <string name="buscar_lugar">Buscar lugar</string>
+    <string name="button_food_description">Botón de comida</string>
+    <string name="button_clothing_description">Botón de ropa</string>
+    <string name="button_cart_description">Botón de carrito</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
 </resources>
